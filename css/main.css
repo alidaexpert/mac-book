@@ -1,0 +1,68 @@
+/* image section  */
+
+.image {
+    width: 60%;
+}
+
+
+/* heading text section  */
+
+.heading {
+    width: 60%;
+}
+
+
+/* memory/storage/delivery section  */
+
+.box-border {
+    border: 1px solid rgb(219, 219, 219);
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.box-border:hover {
+    background-color: rgba(0, 83, 151, 0.911);
+    color: white;
+}
+
+.selected {
+    border: 3px solid rgba(25, 25, 109, 0.637);
+}
+
+
+/* price section  */
+
+.price {
+    width: 45%;
+}
+
+.price hr {
+    color: rgb(170, 169, 169);
+}
+
+.total-hr {
+    border: 1px solid black;
+}
+
+
+/* discount section  */
+
+.input {
+    border-radius: 5px;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+
+/* responsive for mobile  */
+
+@media only screen and (max-width:688px) {
+    .image {
+        width: 100%;
+    }
+    .heading {
+        width: 100%;
+    }
+    .price {
+        width: 100%;
+    }
+}

@@ -17,20 +17,98 @@
 <body>
     <main>
         <section>
-            <div>
-                <div><img src="images/mac.png" alt=""></div>
-                <div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 p-5 d-flex justify-content-lg-end align-items-start ">
+                    <img src="images/mac.png" alt="" class="image"></div>
+                <div class="col-lg-6 col-md-6 col-12 p-5 ">
+                    <div class="heading">
+                        <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
 
+                        <p>Apple M1 chip with B-core CPU with 4 performance cores and 4 efficiency cores,7-core GPU,and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/ USB 4 ports Magic Mouse Magic Keyboard - US English</p>
+                    </div>
+
+                    <!-- memory section  -->
+                    <div class="mt-5">
+                        <h4>Memory</h4>
+                        <div class="d-flex  gap-3">
+                            <p id="memory-8gb" class=" box-border">8GB unified memory</p>
+                            <p id="memory-16gb" class=" box-border">16GB unified memory</p>
+                        </div>
+                    </div>
+                    <!-- Storage section -->
+                    <div class="mt-5">
+                        <h4>Storage</h4>
+                        <div class="d-flex  gap-3">
+                            <p id="storage-256gb" class=" box-border">256GB SSD storage</p>
+                            <p id="storage-512gb" class=" box-border">512GB SSD storage</p>
+                            <p id="storage-1tb" class=" box-border">1TB SSD storage</p>
+                        </div>
+                    </div>
+                    <!-- Delivery cost section  -->
+                    <div class="mt-5">
+                        <h4>Choose your delivery option</h4>
+                        <div class="d-flex flex-wrap  gap-3">
+                            <p id="delivery-free" class=" box-border">Friday, Aug 25 FREE Prime Delivery</p>
+                            <p id="delivery-charge" class="box-border">Friday, Aug 21 Delivery charge $20</p>
+                        </div>
+                    </div>
+
+                    <!-- price section -->
+                    <div class="price mt-5">
+                        <div class="d-flex justify-content-between gap-5">
+                            <h4>Best Price</h4>
+                            <h4>$<span id="main-price">1299</span> </h4>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between gap-5">
+                            <h4>Extra Memory Price</h4>
+                            <h4>$<span id="memory-price">0</span> </h4>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between gap-5">
+                            <h4>Extra storage cost</h4>
+                            <h4>$<span id="storage-price">0</span> </h4>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between gap-5">
+                            <h4>Delivery cost</h4>
+                            <h4>$<span id="delivery-price">0</span> </h4>
+                        </div>
+                        <hr class="total-hr">
+                        <div class="d-flex justify-content-between gap-5">
+                            <h4>Total Price</h4>
+                            <h4>$<span id="total-price">1299</span> </h4>
+                        </div>
+                        <hr>
+                        <div>
+                            <!-- discount section  -->
+                            <p class="fw-bold">Add Promo code</p>
+                            <div class="input-group">
+
+                                <input class="input" type="text" name="" id="discount-input">
+                                <button id="discount-btn" class="btn btn-danger px-3 py-2">Apply</button>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <h1>Total: $<span>1299</span> </h1>
+
+            <!-- total price after discount  -->
+
+            <div class="mb-5 ">
+                <hr class="">
+                <div class="d-flex justify-content-center">
+
+                    <h1>Total: $<span id="grand-total">1299</span> </h1>
+                </div>
+
             </div>
         </section>
     </main>
 
     <!-- javascript  -->
-    <link rel="stylesheet" href="js/macbook.js">
+    <script src="js/macbook.js"></script>
 
     <!-- bootstrap javascript bundle  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
