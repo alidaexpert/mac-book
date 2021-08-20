@@ -109,12 +109,12 @@ deliveryCharge.addEventListener('click', function() {
 
 // discount 20%
 discountButton.addEventListener('click', function() {
-    const grandTotalValue = Number(grandTotal.innerText)
+    const discountValue = Number(totalPrice.innerText)
     const inputValue = discountInput.value
     const couponCode = 'stevekaku'
     if (inputValue.toLowerCase() == couponCode.toLowerCase()) {
-        grandTotal.innerText = grandTotalValue - ((grandTotalValue * 20) / 100)
-        discountInput.setAttribute('disabled', true)
+        grandTotal.innerText = discountValue - ((discountValue * 20) / 100)
+
     }
     discountInput.value = ''
 })
